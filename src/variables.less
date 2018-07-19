@@ -1,0 +1,40 @@
+// Variables
+@main-color: #af1180;
+@main-component-color: rgb(143, 130, 121);
+@button-pressed-color: #e51ab1;
+@main-green: rgb(152, 203, 86);
+@main-red: rgb(200, 32, 39);
+@active-border: #c0c0c0;
+
+@state-border-color: #a8a8a8;
+@help-red: rgb(227,60,74);
+@help-blue: #0093b7;
+@help-yellow: rgb(255,194,6);
+@help-gray: rgb(209,209,209);
+
+@warning-color: rgb(255, 219, 31);
+
+@execution-success-color: @main-green;
+@execution-failed-color: rgb(227, 60, 74);
+@execution-unscripted-color: rgb(209, 210, 209);
+@execution-skipped-color: rgb(0, 147, 183);
+
+@return-variables-color: rgb(0, 146, 102);
+
+// Functions
+.circle(@radius; @borderSize:0; @borderColor: black) {
+  border-radius: 50%;
+  width: @radius;
+  height: @radius;
+  border:@borderSize solid @borderColor;
+}
+
+.centered-circle(@radius; @borderSize:0; @borderColor: black) {
+  .circle(@radius, @borderSize, @borderColor);
+  .centerHorizontally;
+}
+
+.centerHorizontally {
+  margin-left:auto;
+  margin-right:auto;
+}
