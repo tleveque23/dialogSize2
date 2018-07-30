@@ -8,9 +8,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
 
   display: boolean = false;
+  reorderModalDisplay: boolean = false;
 
   content: string = null;
   docHeader: string = null;
+
+  get width(): number {
+    return window.innerWidth * 0.9;
+  }
 
   showDialog() {
     this.content = null;
@@ -23,5 +28,13 @@ export class AppComponent {
     this.docHeader = 'The doc';
     this.content = 'Content\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\n\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\n\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\n\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\n\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\n\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\n\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\n\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\n\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2\nline 2';
     this.display = true;
+  }
+
+  showReorderModal() {
+    this.reorderModalDisplay = true;
+  }
+
+  close() {
+    this.reorderModalDisplay = false;
   }
 }
