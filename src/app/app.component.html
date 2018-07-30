@@ -13,15 +13,15 @@
   </p-footer>
 </p-dialog>
 
-  <p-dialog width="700" height="500" [header]="'Re-order Dialog'" modal="true" [draggable]=false [(visible)]="reorderModalDisplay" >
-    <div>
-      Content
-    </div>
-    <p-footer>
-      <button id="reorder-cancel-button" pButton type="button" icon="fa-ban" (click)="close()" class="pull-left" style="width:80px;" ></button>
-      <button id="reorder-save-button" pButton type="button" icon="fa-floppy-o" (click)="close()" style="width:80px;" ></button>
-    </p-footer>
-  </p-dialog>
+<p-dialog width="700" height="500" [header]="'Re-order Dialog'" modal="true" [draggable]=false [(visible)]="reorderModalDisplay" >
+  <div>
+    Content
+  </div>
+  <p-footer>
+    <button id="reorder-cancel-button" pButton type="button" icon="fa fa-ban" (click)="close()" class="pull-left" style="width:80px;" ></button>
+    <button id="reorder-save-button" pButton type="button" icon="fa fa-floppy-o" (click)="close()" style="width:80px;" ></button>
+  </p-footer>
+</p-dialog>
 
 <button type="text" (click)="showDialog()" pButton icon="pi pi-info-circle" label="Show"></button>
 <button type="text" (click)="showDialogLarge()" pButton icon="pi pi-info-circle" label="Show Larger"></button>
