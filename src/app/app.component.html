@@ -2,7 +2,7 @@
 
 <div class="ui-g-12 ui-g-nopad" >
 
-<p-dialog #docDialog [header]="docHeader" [(visible)]="display" modal="modal" [width]="800" [responsive]="true">
+<!--<p-dialog #docDialog [header]="docHeader" [(visible)]="display" modal="modal" [width]="800" [responsive]="true">
 
   <pre *ngIf="content !== null">{{content}}</pre>
 
@@ -11,10 +11,10 @@
   <p-footer>
     <button id="close-dicumentation-button" type="button" pButton icon="fa-close" (click)="display=false" label="Ok"></button>
   </p-footer>
-</p-dialog>
+</p-dialog>-->
 
 <p-dialog width="700" height="500" [header]="'Re-order Dialog'" modal="true" [draggable]=false [(visible)]="reorderModalDisplay" >
-  <div>
+  <div style="height: 100%">
     Content
   </div>
   <p-footer>
@@ -23,9 +23,9 @@
   </p-footer>
 </p-dialog>
 
-<button type="text" (click)="showDialog()" pButton icon="pi pi-info-circle" label="Show"></button>
-<button type="text" (click)="showDialogLarge()" pButton icon="pi pi-info-circle" label="Show Larger"></button>
-<button type="text" (click)="showReorderModal()" pButton icon="pi pi-info-circle" label="Show Re-order"></button>
+<!--<button type="text" (click)="showDialog()" pButton icon="pi pi-info-circle" label="Show"></button>-->
+<!--<button type="text" (click)="showDialogLarge()" pButton icon="pi pi-info-circle" label="Show Larger"></button>-->
+<button type="text" (click)="showReorderModal()" pButton icon="pi pi-info-circle" label="Show Modal with height"></button>
 
 </div>
 
